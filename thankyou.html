@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<!-- <link rel="stylesheet" href="./style.css" /> -->
+		<link rel="stylesheet" href="./style2.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Thank You</title>
+	</head>
+	<body>
+		<!-- Thank you state start -->
+		<!-- image div -->
+		<div class="thank_container">
+			<div class="back_btn" id="back_btn">
+				<img src="./images/back-button-svgrepo-com.svg" alt="back_button" />
+			</div>
+
+			<div class="thankyou_img">
+				<img src="./images/illustration-thank-you.svg" alt="thankyou_img" />
+			</div>
+			<!-- you selected -->
+			<div id="selected">
+				<p class="t-para" id="para_section"></p>
+			</div>
+			<div id="main_container">
+				<h2>Thank you!</h2>
+				<p class="para">
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don’t hesitate to get in touch!
+				</p>
+			</div>
+		</div>
+		<!-- out of 5 Thank you! We appreciate  -->
+
+		<!-- Thank you state end -->
+	</body>
+</html>
+<script>
+	// Get the rating value from local storage
+	const rating = localStorage.getItem('rating');
+
+	let para_section = document.getElementById(`para_section`);
+
+	para_section.textContent = `You Selected ${rating} out of 5`;
+
+	let back_btn = document.getElementById(`back_btn`);
+
+	back_btn.addEventListener('click', (e) => {
+		window.location.href = './index.html';
+	});
+</script>

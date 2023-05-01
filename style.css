@@ -1,0 +1,131 @@
+
+body{
+    background-color: hsl(216, 12%, 8%);
+}
+#container{
+    /* border: 1px solid red; */
+    width: 22%;
+    /* margin: auto; */
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10%;
+    /* height: 45%; */
+   padding: 25px;
+   padding-top: 50px;
+   color: #fff;
+   font-family: 'Overpass', sans-serif;
+}
+/* thank page css */
+.thank_container{
+    width: 20%;
+    /* margin: auto; */
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 6%;
+    /* height: 45%; */
+   padding: 25px;
+   padding-top: 50px;
+   color: #fff;
+   font-family: 'Overpass', sans-serif;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+#selected{
+   
+    width: 60%;
+    border-radius: 40px;
+    height: 20px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    padding-bottom: 12px;
+background-color: hsl(226, 14%, 30%);
+
+}
+
+.back_btn{
+    width: 12%;
+    cursor: pointer;
+}
+
+.t-para{
+    padding-top: 7px;
+}
+
+
+
+.rating{
+    /* border: 1px solid red; */
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(5,1fr)
+    
+}
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+.star:hover{
+    content: url(./images/icon-star2.svg);
+}
+.num_rating{
+    background-color:  hsl(214, 20%, 25%);
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.num_rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.num{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+   bottom: 5px;
+}
+.button{
+    border: 1px solid red;
+    border: none;
+    width: 100%;
+    border-radius: 40px;
+    height: 40px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+padding: 10px;
+cursor: pointer;
+background-color: #fff;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+.para{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
